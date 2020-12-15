@@ -16,11 +16,11 @@ app
 
 const start = async (): Promise<void> => {
   try {
-    await mongoose.connect(config.get('mongoURI'), {
-      useNewUrlParser: true,
-      useFindAndModify: false,
-      useUnifiedTopology: true
-    })
+    // await mongoose.connect(config.get('mongoURI'), {
+    //   useNewUrlParser: true,
+    //   useFindAndModify: false,
+    //   useUnifiedTopology: true
+    // })
   
     app.listen(PORT, () => {
       console.log(`Server has been started on ${PORT}`)

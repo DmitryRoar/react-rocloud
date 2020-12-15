@@ -1,13 +1,14 @@
 import React from 'react'
 import './App.scss'
 
-import Img from '@img/roar.png'
+import { useRoutes } from './routes'
 
 export const App: React.FC = () => {
+  const routes = useRoutes(false)
+
   return (
     <div>
-      <p>App</p>
-      <img src={Img} />
+      {routes}
     </div>
   )
 }
